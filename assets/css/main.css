@@ -1,3 +1,17 @@
+/* custom navbar style */
 nav {
+	background-color: rgb(1, 1, 65);
+}
+.brand-logo {
+	margin-left: 15px;
+	font-family: 'Rubik', sans-serif;
+}
+
+/* column 1 navbar style */
+.column-1 {
+	background-color: rgb(1, 1, 65);
+	text-decoration: none;
+}
+.btn-large {
 	background-color: rgb(1, 1, 65);
 }
