@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
         <!-- Compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!--Let browser know website is optimized for mobile-->
@@ -18,22 +19,15 @@
         <!-- navbar items go in this section -->
         <nav class="nav-extended">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo">ProMeasure</a>
+                <a href="./index.html" class="brand-logo">promeasure</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">Sass</a></li>
-                    <li><a href="#">Components</a></li>
-                    <li><a href="#">JavaScript</a></li>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact us</a></li>
                 </ul>
             </div>
-            <div class="nav-content">
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a href="#test1">Test 1</a></li>
-                    <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-                    <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-                    <li class="tab"><a href="#test4">Test 4</a></li>
-                </ul>
-            </div>
+
         </nav>
         <!-- ! will need to research more about what this does, looks like it's a media query type application -->
         <ul class="sidenav" id="mobile-demo">
@@ -47,9 +41,20 @@
 
         <div class="row">
             <!-- record list goes here -->
-            <div class="col s2">
-
-
+            <div class="nav-extended">
+                <div class=" nav-wrapper">
+                    <div class="column-1 nav-content col s2">
+                        <div class="section">
+                            <div class="tab"><a class="active btn-large waves-effect waves-red"
+                                    href="#test1">DEMOGRAPHICS</a>
+                            </div>
+                            <div class="tab"><a class="waves-effect btn-large" href="#test2">BASIC</a></div>
+                            <div class="tab disabled"><a class="waves-effect btn-large" href="#test3">DETAILED</a>
+                            </div>
+                            <div class="tab"><a class="waves-effect btn-large" href="#test4">SUMMARY</a></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- data entry fields go here -->
             <div class="col s8">
@@ -59,21 +64,28 @@
                             <div class="row">
                                 <div class="input-field col s6">
                                     <i class="material-icons prefix">account_circle</i>
-                                    <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                                    <input placeholder="John" id="first_name" type="text" class="validate">
                                     <label for="first_name">First Name</label>
                                 </div>
                                 <div class="input-field col s6">
-                                    <input id="last_name" type="text" class="validate">
+                                    <input placeholder="Doe" id="last_name" type="text" class="validate">
                                     <label for="last_name">Last Name</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input disabled value="I am not editable" id="disabled" type="text"
-                                        class="validate">
+                                    <input disabled
+                                        value="We can use disabled fields to help the end user navigate our forms..."
+                                        id="disabled" type="text" class="validate">
                                     <label for="disabled">Disabled</label>
                                 </div>
                             </div>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Filled in</span>
+                                </label>
+                            </p>
                             <div class="row">
                                 <div class="input-field col s12">
                                     <input id="password" type="password" class="validate">
@@ -108,7 +120,7 @@
             </div>
             <!-- hospital list here -->
             <div class="col s2">
-
+                <h5 class="center-align">Hospital List</h5>
             </div>
 
         </div>
