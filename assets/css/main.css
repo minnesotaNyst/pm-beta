@@ -11,7 +11,16 @@ nav {
 .column-1 {
 	background-color: rgb(1, 1, 65);
 	text-decoration: none;
+	height: 100%;
 }
 .btn-large {
 	background-color: rgb(1, 1, 65);
+}
+
+/* form style */
+.form-header {
+	font-weight: bold;
+}
+.row .col .s12 {
+	margin-left: 15px;
 }
