@@ -40,28 +40,36 @@
 
 
         <div class="row">
-            <!-- record list goes here -->
-            <div class="nav-extended">
-                <div class=" nav-wrapper">
-                    <div class="column-1 nav-content col s2">
-                        <div class="section">
-                            <div class="tab"><a class="active btn-large waves-effect waves-red"
-                                    href="#test1">DEMOGRAPHICS</a>
 
-                            </div>
-                            <div class="tab"><a class="waves-effect btn-large" href="#test2">BASIC</a></div>
-                            <div class="tab disabled"><a class="waves-effect btn-large" href="#test3">DETAILED</a>
-                            </div>
-                            <div class="tab"><a class="waves-effect btn-large" href="#test4">SUMMARY</a></div>
-                        </div>
+            <!-- side nav list goes here -->
+            <div class="column-1 nav-content col s1.5">
+                <div class="section">
+                    <div class="tab"><a class="active btn-large waves-effect" href="#test1">MISSION
+                            INFO</a>
                     </div>
+                    <div class="tab"><a class="waves-effect btn-large" href="#test2">GENERAL SECTION</a></div>
+                    <div class="tab disabled"><a class="waves-effect btn-large" href="#test3">PEDIATRICS</a>
+                    </div>
+                    <div class="tab"><a class="waves-effect btn-large" href="#test4">PEDIATRICS QM</a></div>
+                    <div class="tab"><a class="waves-effect btn-large" href="#test5">TRAUMA/NEURO</a></div>
+                    <div class="tab"><a class="waves-effect btn-large" href="#test6">AIRWAY/VENT</a></div>
+                    <div class="tab"><a class="waves-effect btn-large" href="#test7">ADULT QM</a></div>
                 </div>
             </div>
+
+            <!-- empty column is here for spacing purposes -->
+            <div class="empty-column col s.5"></div>
+
             <!-- data entry fields go here -->
             <div class="col s8">
                 <div class="section">
                     <div class="data-entry row">
-                        <form class="col s12">
+
+                        <!-- INTRO SECTION: date of flight, mission/trip #, night flight, pt population, pt diagnosis, team composition, amc caregiver(s), chart reviewer -->
+                        <form class="intro-section col s12">
+                            <div>
+                                <h3 class="form-header flow-text center-align">Mission Info</h3>
+                            </div>
                             <div class="row">
                                 <div class="input-field col s6">
                                     <i class="material-icons prefix">account_circle</i>
@@ -116,6 +124,74 @@
                                 </div>
                             </div>
                         </form>
+
+                        <!-- GENERAL SECTION:  aborted call, amc clinical title, demographics completed, output, etc...  -->
+                        <form class="intro-section col s12">
+                            <div>
+                                <h3 class="form-header flow-text center-align">General</h3>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input placeholder="John" id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input placeholder="Doe" id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input disabled
+                                        value="We can use disabled fields to help the end user navigate our forms..."
+                                        id="disabled" type="text" class="validate">
+                                    <label for="disabled">Disabled</label>
+                                </div>
+                            </div>
+                            <p>
+                                <label>
+                                    <input type="checkbox" class="filled-in" checked="checked" />
+                                    <span>Filled in</span>
+                                </label>
+                            </p>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="password" type="password" class="validate">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col s12">
+                                    This is an inline input field:
+                                    <div class="input-field inline">
+                                        <input id="email_inline" type="email" class="validate">
+                                        <label for="email_inline">Email</label>
+                                        <span class="helper-text" data-error="wrong" data-success="right">Helper
+                                            text</span>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <i class="material-icons prefix">phone</i>
+                                        <input id="icon_telephone" type="tel" class="validate">
+                                        <label for="icon_telephone">Cell Phone</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- CARDIAC SECTION:  cardiac pt, acute cardiac event, hx of onset, tx/mds given , etc...  -->
+                        <!-- PEDIATRICS SECTION: peds pt, initial temp, proper restraint, blood sugar, etc...  -->
+                        <!-- PEDS QM DATA: peds pt decom, med equip failure, theraputic device, etc... -->
+                        <!-- TRAUMA SECTION: trauma pt, mechanism of injury, gcs, hospital course, etc... -->
+                        <!-- NEURO SECTION: neuro pt, bp managed, acute altered mental status, etc... -->
+                        <!-- AIRWAY/VENT SECTION: resp assessment completed, advanced airway, mechanical vent, etc... -->
+                        <!-- ADULT QM DATA: pt decom, education, further review...  -->
                     </div>
                 </div>
             </div>
