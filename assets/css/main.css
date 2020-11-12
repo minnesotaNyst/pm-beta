@@ -15,3 +15,8 @@ nav {
 .btn-large {
 	background-color: rgb(1, 1, 65);
 }
+
+/* form style */
+.form-header {
+	font-weight: bold;
+}
