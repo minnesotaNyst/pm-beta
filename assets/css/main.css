@@ -24,3 +24,11 @@ nav {
 .row .col .s12 {
 	margin-left: 15px;
 }
+
+/* header test style */
+legend {
+	font-weight: bold;
+}
+ .col-form-label{
+	 font-size: 16px;
+ }

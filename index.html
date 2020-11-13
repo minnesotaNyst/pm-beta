@@ -11,10 +11,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!--let browser know website is optimized for mobile-->
         <link rel="stylesheet" href="./assets/css/main.css">
-        <!-- form.io stylesheet -->
-        <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- form.io stylesheet -->
+        <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+        <!-- !^this is throwing an error in the console and i'm not sure why -->
+
 
         <title>ProMeasure Beta</title>
     </head>
@@ -66,25 +68,30 @@
 
             <!-- data entry fields go here -->
             <div class="empty-column col s8">
-                <div id="formio"></div>
+                <div class="section">
+                    <div id="formio">
+                        <script
+                            src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://atelyxbavvhqhre.form.io/pmbeta"></script>
+                    </div>
+                </div>
             </div>
             <!-- hospital list here -->
             <div class="col s2">
-                <h5 class="center-align">Hospital List</h5>
+                <h3 class="center-align">Hospital List</h3>
+                <!-- TODO: ^^ Tony, I'd like to see this more bold and centered in the right column. I know the class is center-align, but it still seems a little off... -->
             </div>
 
         </div>
+
         <!-- form.io -->
         <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
-        <script
-            src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://atelyxbavvhqhre.form.io/pmbeta"></script>
-
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="./assets/js/main.js"></script>
+
 
     </body>
 
