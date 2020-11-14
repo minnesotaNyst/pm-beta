@@ -1,6 +1,6 @@
 /* custom navbar style */
 nav {
-	background-color: #182580;
+	background-color: #2e2e31;
 }
 .brand-logo {
 	margin-left: 15px;
@@ -9,13 +9,13 @@ nav {
 
 /* column 1 navbar style */
 .column-1 {
-	background-color: #182580;
+	background-color: #2e2e31;
 	text-decoration: none;
 	height: 100vh;
 	position: fixed;
 }
 .btn-large {
-	background-color: #182580;
+	background-color: #2e2e31;
 	width: 100%;
 }
 
@@ -49,7 +49,7 @@ legend {
 .btn:hover,
 .btn-large:hover,
 .btn-small:hover {
-	background-color: #2032b8;
+	background-color: #55565c;
 	text-decoration: none;
 	color: whitesmoke;
 }
@@ -62,5 +62,16 @@ legend {
 }
 
 .btn {
-	background-color: #55565c;
+	background-color: #dc9413;
+}
+
+/* choices list style */
+.choices__list--multiple .choices__item {
+	background-color: #dc9413 !important;
+	border: 1px solid #dc9413 !important;
+}
+
+.choices[data-type*='select-multiple'] .choices__button,
+.choices[data-type*='text'] .choices__button {
+	border-left: 1px solid whitesmoke !important;
 }
