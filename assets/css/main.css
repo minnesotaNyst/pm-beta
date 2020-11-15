@@ -24,6 +24,15 @@ nav {
 	padding-right: 5rem;
 }
 
+/* modal */
+.hidden {
+	display: none;
+}
+
+.modal {
+	max-height: 45% !important;
+}
+
 /* form style */
 .form-header {
 	font-weight: bold;
