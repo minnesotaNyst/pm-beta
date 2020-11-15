@@ -1,3 +1,11 @@
+/* html/body style for the page */
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
 /* custom navbar style */
 nav {
 	background-color: #2e2e31;
@@ -83,4 +91,11 @@ legend {
 .choices[data-type*='select-multiple'] .choices__button,
 .choices[data-type*='text'] .choices__button {
 	border-left: 1px solid whitesmoke !important;
+}
+
+/* footer style */
+.page-footer {
+	position: absolute;
+	background-color: #2e2e31 !important;
+	width: 100%;
 }
