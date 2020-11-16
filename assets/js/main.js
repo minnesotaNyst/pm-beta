@@ -60,5 +60,9 @@ var displayDecision = function () {
 	}
 };
 
+$(document).ready(function () {
+	$('.modal2').on('submit')
+});
+
 displayDecision();
 $('#get_name').on('click', setName);
