@@ -1,121 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--google icon font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- materialize -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!--let browser know website is optimized for mobile-->
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <!-- form.io stylesheet -->
-        <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
-        <!-- !^this is throwing an error in the console and i'm not sure why -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google icon font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- form.io stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+    <!-- !^this is throwing an error in the console and i'm not sure why -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
-        <title>Contact Us</title>
-    </head>
+    <title>Contact Us</title>
+</head>
 
-    <body>
+<body>
+    <!-- navbar items go in this section -->
+    <div class="navbar-fixed">
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="brand-logo">whatever works</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><i class="material-icons">account_circle</i></li>
+                    <li><a class="details active waves-effect" href="index.html">home</a></li>
+                    <li><a class="details active waves-effect" href="#">about</a></li>
+                    <li><a class="details active waves-effect" href="./contact-us.html">contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    
+    <div class="row">
+        <div>
+            <h2 class="center-align">Meet the Staff</h2>
+            <h6 class="col s12 center-align">Get to know the people who will be working for you.</h6>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section class="container">
+        <section>
+            <div class="row">
+                <div class="col s6 m6">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <img src="assets/images/BogeyIMG.png">
+                            <span class="card-title">Jake Nystrom</span>
+                        </div>
+                        
+                        <div class="card-content">
+                            <p>Hello, my name is Jake. Although I may look like a fluffy companion, I'm actually the one
+                                who
+                                is running the show. Still feel free to scratch behind my ears though.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.linkedin.com/in/jakenystrom/" target="_blank">LINKEDIN</a>
+                            <a href="https://github.com/minnesotaNyst" target="_blank">Github</a>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">expand_more</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s6 m6">
+                    <div class="card large hoverable">
+                        <div class="card-image">
+                            <img src="assets/images/WillPIMG.png">
+                            <span class="card-title">Will Pearson</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Hello, I'm Will. I've got a smile that'll make your grandmother faint. </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.linkedin.com/in/williamdpearson" target="_blank">LINKEDIN</a>
+                            <a href="https://github.com/willp429" target="_blank">Github</a>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">expand_more</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+
+        <!-- Contact info in this section -->
 
         <div>
             <h2>Contact Us</h2>
         </div>
+
         <div class="row">
-            <div>
-                <h4 class="container col s4 z-depth-1">Got a LinkedIn?</h4>
-                <br><br>
-                <h6 class="col s12">Get to know our staff and their awesome credentials.</h6>
+            <div class="divider"></div>
+            <div class="section">
+                <div class="contact-form col s12">
+                    <h5>Reach out to us with any questions you might have.</h5>
+                    <div class="row">
+                        <form class="col s12" id="contact-form">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" class="validate">
+                                    <label for="icon_prefix">Full Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Email</label>
+                                </div>
+                            </div>
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" placeholder="Message"></textarea>
+
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal_box">Submit</a>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="divider"></div>
-                <div class="section">
-                    <div class="col s6">
-                        <h5>Jake Nystrom</h5>
-                        <p>Dont let those good looks fool you. Jake is considered to be the brains of the organization.
-                        </p>
-                        <a href="https://www.linkedin.com/in/jakenystrom/" class="waves-effect waves-light btn-large"
-                            target="_blank">LinkedIn Profile</a>
-                    </div>
-                    <div class="col s6">
-                        <img src="assets/images/jakeskiing.jpg" alt="Jake shredding some wake." class="z-depth-2">
-                    </div>
-                </div>
-                </nav>
-            </div>
+    </section>
 
-            <!-- Contact info in this section -->
-            <section class="container">
-                <div>
-                    <h2>Contact Us</h2>
-                </div>
+    <!-- modal thanking user for submitting a contact form -->
+    <div id="modal_box" class="modal">
+        <div class="modal-content">
+            <h4>Thank you for reaching out to us!</h4>
+            <p>We will get back to you as soon as possible.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn">Close</a>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
                 <div class="row">
-                    <div class="divider"></div>
-                    <div class="section">
-                        <div class="col s6">
-                            <img src="assets/images/williampearson.jpg" alt="Will sitting in a chair being dapper"
-                                class="z-depth-2">
-                        </div>
-                        <div class="col s6">
-                            <h5>Will Pearson</h5>
-                            <p>Although his picture dates him in the early 1940's, Will has a lot of energy to
-                                bring to the group.</p>
-                            <a href="https://www.linkedin.com/in/williamdpearson"
-                                class="waves-effect waves-light btn-large" target="_blank">LinkedIn Profile</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="divider"></div>
-                    <div class="section">
-                        <div class="contact-form col s12">
-                            <h4>Leave us a message.</h4>
-                            <form>
-                                <label for="contact-name">Your Name</label>
-                                <input type="text" id="contact-name" placeholder="Your Name" />
-
-                                <label for="contact-message">Message</label>
-                                <textarea id="contact-message" placeholder="Message"></textarea>
-
-                                <button type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- footer section -->
-            <footer class="page-footer">
-                <div class="footer-copyright">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col l6 s12" id="visitor">
-                                <!-- <h6 class="grey-text text-lighten-4">Thanks for visiting our page, <span id="visitor"
+                    <div class="col l6 s12" id="visitor">
+                        <!-- <h6 class="grey-text text-lighten-4">Thanks for visiting our page, <span id="visitor"
                             class="visitor-name"></span>!
                     </h6> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container right-align">
-                        <h6> © 2020 whatever works</h6>
                     </div>
                 </div>
-            </footer>
+            </div>
+            <div class="container right-align">
+                <h6> © 2020 whatever works</h6>
+            </div>
+        </div>
+    </footer>
 
-            <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
-            <!-- jQuery -->
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-            <!-- Compiled and minified JavaScript -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            <!--JavaScript at end of body for optimized loading-->
-            <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 
-    </body>
+</body>
 
 </html>
