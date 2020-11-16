@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--google icon font-->
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- materialize -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <!--let browser know website is optimized for mobile-->
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <!-- form.io stylesheet -->
-        <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
-        <!-- !^this is throwing an error in the console and i'm not sure why -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--google icon font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- form.io stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+    <!-- !^this is throwing an error in the console and i'm not sure why -->
+    <link rel="stylesheet" href="./assets/css/main.css">
 
 
-        <title>ProMeasure Beta</title>
-    </head>
+    <title>ProMeasure Beta</title>
+</head>
 
-    <body>
-        <!-- navbar items go in this section -->
+<body>
+    <!-- navbar items go in this section -->
+    <div class="navbar-fixed">
         <nav class="nav-extended">
             <div class="nav-wrapper">
                 <a href="./index.html" class="brand-logo">whatever works</a>
@@ -30,69 +30,55 @@
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="#">home</a></li>
                     <li><a href="#">about</a></li>
-                    <li><a href="#">contact us</a></li>
+                    <li><a href="./contact-us.html">contact us</a></li>
                 </ul>
             </div>
-
         </nav>
-        <!-- ! will need to research more about what this does, looks like it's a media query type application -->
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
+    </div>
 
-        <!-- this is where the main content will go, it should be split into three columans -->
+    <!-- this is where the main content will go, it should be split into three columans -->
 
+    <div class="row">
 
-        <div class="row">
-
-            <!-- side nav list goes here -->
-            <div class="column-1 nav-content col s1.5">
-                <div class="section">
-                    <div class="tab"><a class="active btn-large waves-effect" href="#test1">MISSION
-                            INFO</a>
-                    </div>
-                    <div class="tab"><a class="waves-effect btn-large" href="#test2">GENERAL SECTION</a></div>
-                    <div class="tab disabled"><a class="waves-effect btn-large" href="#test3">PEDIATRICS</a>
-                    </div>
-                    <div class="tab"><a class="waves-effect btn-large" href="#test4">PEDIATRICS QM</a></div>
-                    <div class="tab"><a class="waves-effect btn-large" href="#test5">TRAUMA/NEURO</a></div>
-                    <div class="tab"><a class="waves-effect btn-large" href="#test6">AIRWAY/VENT</a></div>
-                    <div class="tab"><a class="waves-effect btn-large" href="#test7">ADULT QM</a></div>
+        <!-- side nav list goes here -->
+        <div class="column-1">
+            <div class="section">
+                <div class="tab"><a class="active btn-large waves-effect" href="#test1">MISSION
+                        INFO</a>
                 </div>
-            </div>
-
-            <!-- empty column is here for spacing purposes -->
-            <div class="empty-column col s.5"></div>
-
-            <!-- data entry fields go here -->
-            <div class="empty-column col s8">
-                <div class="section">
-                    <div id="formio">
-                        <script
-                            src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://atelyxbavvhqhre.form.io/pmbeta"></script>
-                    </div>
+                <div class="tab"><a class="waves-effect btn-large" href="#test1">GENERAL SECTION</a></div>
+                <div class="tab disabled"><a class="waves-effect btn-large" href="#test3">PEDIATRICS</a>
                 </div>
+                <div class="tab"><a class="waves-effect btn-large" href="#test4">PEDIATRICS QM</a></div>
+                <div class="tab"><a class="waves-effect btn-large" href="#test5">TRAUMA/NEURO</a></div>
+                <div class="tab"><a class="waves-effect btn-large" href="#test6">AIRWAY/VENT</a></div>
+                <div class="tab"><a class="waves-effect btn-large" href="#test7">ADULT QM</a></div>
             </div>
-            <!-- hospital list here -->
-            <div class="col s2">
-                <h5 class="center-align">Hospital List</h5>
-                <!-- TODO: ^^ Tony, I'd like to see this more bold and centered in the right column. I know the class is center-align, but it still seems a little off... -->
-            </div>
-
         </div>
 
-        <!-- form.io -->
-        <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <!-- Compiled and minified JavaScript -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <!--JavaScript at end of body for optimized loading-->
-        <script type="text/javascript" src="./assets/js/main.js"></script>
+        <!-- data entry fields go here -->
+        <div class="column-2">
+            <div class="section formio">
+                <div id="formio">
+                    <script
+                        src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://atelyxbavvhqhre.form.io/pmbeta"></script>
+                </div>
+            </div>
+        </div>
 
 
-    </body>
+    </div>
+
+    <!-- form.io -->
+    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+
+
+</body>
 
 </html>
