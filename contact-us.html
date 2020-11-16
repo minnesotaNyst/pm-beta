@@ -21,22 +21,24 @@
     </head>
 
     <body>
-        <!-- navbar items go in this section -->
-        <nav class="nav-extended">
-            <div class="nav-wrapper">
-                <a href="./index.html" class="brand-logo">whatever works</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">contact us</a></li>
-                </ul>
-            </div>
 
-        </nav>
+        <!-- navbar items go in this section -->
+        <div class="navbar-fixed">
+            <nav class="nav-extended">
+                <div class="nav-wrapper">
+                    <a href="./index.html" class="brand-logo">whatever works</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a class="details active waves-effect" href="./index.html">home</a></li>
+                        <li><a class="details active waves-effect" href="#">about</a></li>
+                        <li><a class="details active waves-effect" href="./contact-us.html">contact us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
         <!-- Contact info in this section -->
         <section class="container">
-
             <div>
                 <h2>Contact Us</h2>
             </div>
@@ -69,8 +71,25 @@
                     </form>
                 </div>
             </div>
-
         </section>
+
+        <!-- footer section -->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12" id="visitor">
+                            <!-- <h6 class="grey-text text-lighten-4">Thanks for visiting our page, <span id="visitor"
+                            class="visitor-name"></span>!
+                    </h6> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container right-align">
+                    <h6> © 2020 whatever works</h6>
+                </div>
+            </div>
+        </footer>
 
         <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
         <!-- jQuery -->

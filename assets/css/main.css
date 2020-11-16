@@ -65,14 +65,16 @@ legend {
 /* button style */
 .btn:hover,
 .btn-large:hover,
-.btn-small:hover {
+.btn-small:hover,
+.details:hover {
 	background-color: #55565c;
 	text-decoration: none;
 	color: whitesmoke;
 }
 .btn:focus,
 .btn-large:focus,
-.btn-small:focus {
+.btn-small:focus,
+.details:focus {
 	background-color: #55565c;
 	text-decoration: none;
 	color: whitesmoke;
