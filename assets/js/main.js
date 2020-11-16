@@ -1,3 +1,6 @@
+/* set variables */
+var fName = [];
+
 /* load the form.io when the page loads */
 window.onload = function () {
 	Formio.createForm(
@@ -20,10 +23,6 @@ var displayModal = function () {
 $(document).ready(function () {
 	$('.datepicker').datepicker();
 });
-
-/* get the name from the modal & set variables */
-
-var fName = [];
 
 /* get from local storage and dynamically display message */
 var displayName = function () {
@@ -49,6 +48,17 @@ var setName = function () {
 	displayName();
 };
 
-$('#get_name').on('click', setName);
+/* function to see if a fName already exists, if not then (and only then) run the displayModal function */
+var displayDecision = function () {
+	fName = JSON.parse(localStorage.getItem('firstName'));
 
-displayModal();
+	if (!fName) {
+		displayModal();
+	} else {
+		displayName();
+		return;
+	}
+};
+
+displayDecision();
+$('#get_name').on('click', setName);
