@@ -25,7 +25,7 @@ $(document).ready(function () {
 
 var fName = [];
 
-/* get from local storage */
+/* get from local storage and dynamically display message */
 var displayName = function () {
 	fName = JSON.parse(localStorage.getItem('firstName'));
 	console.log(fName);
@@ -34,7 +34,10 @@ var displayName = function () {
 		fName = [];
 		return;
 	} else {
-		$('#visitor').text(fName);
+		var dDisplay = document.createElement('h6');
+		dDisplay.textContent = 'Thank you for visiting our page, ' + fName + '!';
+		dDisplay.classList = 'grey-text text-lighten-4';
+		$('#visitor').append(dDisplay);
 	}
 };
 
