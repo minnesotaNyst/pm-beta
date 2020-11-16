@@ -1,3 +1,11 @@
+/* html/body style for the page */
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
 /* custom navbar style */
 nav {
 	background-color: #2e2e31;
@@ -24,6 +32,15 @@ nav {
 	padding-right: 5rem;
 }
 
+/* modal */
+.hidden {
+	display: none;
+}
+
+.modal {
+	max-height: 45% !important;
+}
+
 /* form style */
 .form-header {
 	font-weight: bold;
@@ -48,14 +65,16 @@ legend {
 /* button style */
 .btn:hover,
 .btn-large:hover,
-.btn-small:hover {
+.btn-small:hover,
+.details:hover {
 	background-color: #55565c;
 	text-decoration: none;
 	color: whitesmoke;
 }
 .btn:focus,
 .btn-large:focus,
-.btn-small:focus {
+.btn-small:focus,
+.details:focus {
 	background-color: #55565c;
 	text-decoration: none;
 	color: whitesmoke;
@@ -74,4 +93,11 @@ legend {
 .choices[data-type*='select-multiple'] .choices__button,
 .choices[data-type*='text'] .choices__button {
 	border-left: 1px solid whitesmoke !important;
+}
+
+/* footer style */
+.page-footer {
+	position: absolute;
+	background-color: #2e2e31 !important;
+	width: 100%;
 }

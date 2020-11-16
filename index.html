@@ -13,11 +13,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <!-- form.io stylesheet -->
         <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
-        <!-- !^this is throwing an error in the console and i'm not sure why -->
+        <!-- form.io -->
+        <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+        <!-- custom style sheet -->
         <link rel="stylesheet" href="./assets/css/main.css">
 
-
-        <title>ProMeasure Beta</title>
+        <title>Whatever Works</title>
     </head>
 
     <body>
@@ -28,9 +29,9 @@
                     <a href="./index.html" class="brand-logo">whatever works</a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="./contact-us.html">contact us</a></li>
+                        <li><a class="details active waves-effect" href="#">home</a></li>
+                        <li><a class="details active waves-effect" href="#">about</a></li>
+                        <li><a class="details active waves-effect" href="./contact-us.html">contact us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -57,14 +58,33 @@
                 </div>
             </div>
 
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger hidden" href="#modal1">Modal</a>
+
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
                 <div class="modal-content">
-                    <h4>Modal Header</h4>
-                    <p>A bunch of text</p>
+                    <h5>Hello, welcome to whatever works! May we have the pleasure of knowing who we are hosting?</h5>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>PSA: We will not store your name outside of this browsing session 😊 </h6>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="modal-footer">
-                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    <a href="#!" id="get_name" class="modal-close waves-effect btn-large">Done</a>
                 </div>
             </div>
 
@@ -79,15 +99,30 @@
             </div>
         </div>
 
-        <!-- form.io -->
-        <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+        <!-- footer section -->
+        <footer class="page-footer">
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col l6 s12" id="visitor">
+                            <!-- <h6 class="grey-text text-lighten-4">Thanks for visiting our page, <span id="visitor"
+                                    class="visitor-name"></span>!
+                            </h6> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container right-align">
+                    <h6> © 2020 whatever works</h6>
+                </div>
+            </div>
+        </footer>
+
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <!-- Compiled and minified JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <!--JavaScript at end of body for optimized loading-->
         <script type="text/javascript" src="./assets/js/main.js"></script>
-
 
     </body>
 
