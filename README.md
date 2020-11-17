@@ -47,7 +47,8 @@ A form builder enabling dynamic and configurable data documentation
 ---
 
 ## Future Enhancements
-![Open Issues](https://img.shields.io/github/issues/minnesotaNyst/pm-beta?style=flat-square?link=)(https://github.com/minnesotaNyst/pm-beta/issues)
+[![Open Issues](https://img.shields.io/github/issues/minnesotaNyst/pm-beta?style=flat-square/)](https://github.com/minnesotaNyst/pm-beta/issues)
+- 
 
 [Back to Contents](#table-of-contents)
 
