@@ -101,3 +101,7 @@ legend {
 	background-color: #2e2e31 !important;
 	width: 100%;
 }
+
+.copyright {
+	padding: 0 20px;
+}
