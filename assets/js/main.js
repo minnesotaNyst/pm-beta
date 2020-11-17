@@ -91,7 +91,25 @@ $(document).ready(function () {
 	$('.sidenav').sidenav();
 });
 
+
+
+
+var apiCounter = function () {
+	$.getJSON(
+		'https://api.countapi.xyz/hit/minnesotanyst.github.iopm-beta/visits',
+		function (response) {
+			var apiDisplay = document.createElement('p');
+			apiDisplay.textContent =
+				'Fun fact, this site has been visited ' + response.value + ' times!';
+			apiDisplay.classList = 'center-align';
+			$('#visits').append(apiDisplay);
+		}
+	);
+};
+
 $('#submit-btn').on('click', userQuestion);
+$('.modal').modal();
 
 displayDecision();
+apiCounter();
 $('#get_name').on('click', setName);
