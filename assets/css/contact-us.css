@@ -1,0 +1,116 @@
+/* html/body style for the page */
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+/* custom navbar style */
+nav {
+	background-color: #2e2e31;
+}
+.brand-logo {
+	margin-left: 15px;
+	font-family: 'Rubik', sans-serif;
+}
+
+/* column 1 navbar style */
+.column-1 {
+	background-color: #2e2e31;
+	text-decoration: none;
+	height: 100vh;
+	position: fixed;
+}
+.btn-large {
+	background-color: #2e2e31;
+	width: 100%;
+}
+
+/* column 2 style */
+.column-2 {
+	padding-right: 5rem;
+}
+
+/* modal */
+.hidden {
+	display: none;
+}
+
+.modal {
+	max-height: 45% !important;
+}
+
+/* form style */
+.form-header {
+	font-weight: bold;
+}
+.row .col .s12 {
+	margin-left: 15px;
+}
+
+/* header test style */
+legend {
+	font-weight: bold;
+}
+.col-form-label {
+	font-size: 16px;
+}
+
+/* formio style */
+.formio {
+	padding-left: 16rem;
+}
+
+/* button style */
+.btn:hover,
+.btn-large:hover,
+.btn-small:hover,
+.details:hover {
+	background-color: #55565c;
+	text-decoration: none;
+	color: whitesmoke;
+}
+.btn:focus,
+.btn-large:focus,
+.btn-small:focus,
+.details:focus {
+	background-color: #55565c;
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+.btn {
+	background-color: #dc9413;
+}
+
+/* choices list style */
+.choices__list--multiple .choices__item {
+	background-color: #dc9413 !important;
+	border: 1px solid #dc9413 !important;
+}
+
+.choices[data-type*='select-multiple'] .choices__button,
+.choices[data-type*='text'] .choices__button {
+	border-left: 1px solid whitesmoke !important;
+}
+
+/* footer style */
+.page-footer {
+	position: absolute;
+	background-color: #2e2e31 !important;
+	width: 100%;
+}
+
+.modal {
+    background: none;
+    height: fit-content;
+}
+
+.copyright {
+	padding: 0 20px;
+}
+
+.apiCounter {
+	padding: 0 20px;
+}
