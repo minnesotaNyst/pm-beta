@@ -60,9 +60,39 @@ var displayDecision = function () {
 	}
 };
 
+/* opens modal on contact-us page upon form submission */
 $(document).ready(function () {
-	$('.modal').modal();
+	$('#modal2').modal();
 });
+
+/* Contains values for user form */
+var userQuestion = function () {
+	var user = $('#full-name').val();
+	var email = $('#email').val();
+	var message = $('#contact-message').val();
+	if (user !== "") {
+		//this var is looking for information that might exist with a key of inputInfo, if nothing exists set inputInfo = []
+		var inputInfo = JSON.parse(window.localStorage.getItem("inputInfo")) || [];
+		var content = {
+			full_name: user,
+			user_email: email,
+			content_message: message,
+		};
+		inputInfo.push(content);
+		window.localStorage.setItem("inputInfo", JSON.stringify(inputInfo));
+	};
+	$('#full-name').val('');
+	$('#email').val('');
+	$('#contact-message').val('');
+};
+
+/* Activates side nav in mobile screens */
+$(document).ready(function () {
+	$('.sidenav').sidenav();
+});
+
+
+
 
 var apiCounter = function () {
 	$.getJSON(
@@ -76,6 +106,9 @@ var apiCounter = function () {
 		}
 	);
 };
+
+$('#submit-btn').on('click', userQuestion);
+$('.modal').modal();
 
 displayDecision();
 apiCounter();
