@@ -60,9 +60,29 @@ var displayDecision = function () {
 	}
 };
 
+/* opens modal on contact-us page upon form submission */
 $(document).ready(function () {
-	$('.modal2').on('submit')
+	$('#modal2').modal();
 });
+
+var userQuestion = function () {
+	var user = $('#full-name').val();
+	var email = $('#email').val();
+	var message = $('#contact-message').val();
+	localStorage.setItem('#full-name', JSON.stringify(user));
+	localStorage.setItem('#email', JSON.stringify(email));
+	localStorage.setItem('#contact-message', JSON.stringify(message));
+	$('#full-name').val('');
+	$('#email').val('');
+	$('#contact-message').val('');
+};
+
+/* Activates side nav in mobile screens */
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+
+$('#submit-btn').on('click', userQuestion);
 
 displayDecision();
 $('#get_name').on('click', setName);
