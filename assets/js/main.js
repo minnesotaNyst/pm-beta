@@ -92,6 +92,10 @@ $(document).ready(function () {
 	$('.sidenav').sidenav();
 });
 
+/* feature discovery button on contact-us page */
+$(document).ready(function(){
+    $('.tap-target').tapTarget();
+});
 
 var apiCounter = function () {
 	$.getJSON(
