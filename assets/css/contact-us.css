@@ -101,6 +101,7 @@ legend {
 	background-color: #2e2e31 !important;
 	width: 100%;
 	text-align: center;
+	position: absolute;
 }
 
 .modal {
@@ -114,4 +115,14 @@ legend {
 
 .apiCounter {
 	padding: 0 20px;
+}
+
+.footer-copyright {
+	padding: 0;
+	text-align: center;
+}
+
+.wrapper {
+	position: relative;
+	z-index: 1;
 }

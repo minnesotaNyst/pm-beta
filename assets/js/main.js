@@ -33,7 +33,7 @@ var displayName = function () {
 		fName = [];
 		return;
 	} else {
-		var dDisplay = document.createElement( 'h6' );
+		var dDisplay = document.createElement( 'p' );
 		dDisplay.textContent = 'Thank you for visiting our page, ' + fName + '!';
 		dDisplay.classList = 'grey-text text-lighten-4';
 		$( '#visitor' ).append( dDisplay );
