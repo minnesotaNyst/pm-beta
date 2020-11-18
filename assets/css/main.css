@@ -39,6 +39,8 @@ nav {
 
 .modal {
 	max-height: 45% !important;
+	background: none;
+    height: fit-content;
 }
 
 /* form style */

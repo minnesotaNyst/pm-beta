@@ -27,7 +27,7 @@
         <nav class="nav-extended">
             <div class="nav-wrapper">
                 <a href="./index.html" class="brand-logo">whatever works</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><i class="material-icons">home</i></li>
                     <li><a class="details active waves-effect" href="#">home</a></li>
@@ -37,6 +37,22 @@
             </div>
         </nav>
     </div>
+    <!-- side nav for mobile/small devices -->
+    <ul id="slide-out" class="sidenav">
+        <li><a class="waves-effect" href="./index.html"><i class="material-icons">home</i>Homepage</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="./contact-us.html">Contact Us</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="#!">About Us</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="#!">Customer Support</a></li>
+    </ul>
 
     <!-- this is where the main content will go, it should be split into three columans -->
 
@@ -84,8 +100,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="modal-footer">
             <a href="#!" id="get_name" class="modal-close waves-effect btn-large">Done</a>
         </div>
     </div>
@@ -99,29 +113,31 @@
             </div>
         </div>
 
-        </div>
-        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-        <script type="IN/Share" data-url="https://www.linkedin.com"></script>
-        
-        <!-- footer section -->
-        <footer class="page-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 s12">
-                        <h5 class="white-text" id="visitor"></h5>
-                        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iusto id enim cumque earum illum ipsa. Sed delectus et quibusdam est optio ea sunt, officiis inventore debitis repellendus, laboriosam aliquam!.</p>
-                    </div>
-                    <div class="col l4 offset-l2 s12">
-                        <h5 class="white-text">whatever works</h5>
-                        <ul>
-                            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                            <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
-                            <li><a class="grey-text text-lighten-3" href="./contact-us.html">Contact Us</a></li>
-                        </ul>
-                    </div>
+    </div>
+    <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+    <script type="IN/Share" data-url="https://www.linkedin.com"></script>
+
+    <!-- footer section -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text" id="visitor"></h5>
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                        iusto id enim cumque earum illum ipsa. Sed delectus et quibusdam est optio ea sunt, officiis
+                        inventore debitis repellendus, laboriosam aliquam!.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">whatever works</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">About</a></li>
+                        <li><a class="grey-text text-lighten-3" href="./contact-us.html">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-copyright">
+        </div>
+        <div class="footer-copyright">
             <div class="container right-align">
                 <h6> © 2020 whatever works</h6>
             </div>
