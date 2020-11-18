@@ -93,8 +93,6 @@ $(document).ready(function () {
 });
 
 
-
-
 var apiCounter = function () {
 	$.getJSON(
 		'https://api.countapi.xyz/hit/minnesotanyst.github.iopm-beta/visits',
