@@ -1,115 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--google icon font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <!-- materialize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- form.io stylesheet -->
-    <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
-    <!-- form.io -->
-    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
-    <!-- custom style sheet -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--google icon font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- materialize -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- form.io stylesheet -->
+        <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+        <!-- form.io -->
+        <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+        <!-- custom style sheet -->
+        <link rel="stylesheet" href="./assets/css/main.css">
 
-    <title>Whatever Works</title>
-</head>
+        <title>Whatever Works</title>
+    </head>
 
-<body>
-    <!-- navbar items go in this section -->
-    <div class="navbar-fixed">
-        <nav class="nav-extended">
-            <div class="nav-wrapper">
-                <a href="./index.html" class="brand-logo">whatever works</a>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><i class="material-icons">home</i></li>
-                    <li><a class="details active waves-effect" href="#">home</a></li>
-                    <li><a class="details active waves-effect" href="#">about</a></li>
-                    <li><a class="details active waves-effect" href="./contact-us.html">contact us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-
-    <!-- this is where the main content will go, it should be split into three columans -->
-
-    <div class="row">
-
-        <!-- side nav list goes here -->
-        <div class="column-1">
-            <div class="section">
-                <div class="tab"><a class="active btn-large waves-effect" href="#test1">MISSION
-                        INFO</a>
+    <body>
+        <!-- navbar items go in this section -->
+        <div class="navbar-fixed">
+            <nav class="nav-extended">
+                <div class="nav-wrapper">
+                    <a href="./index.html" class="brand-logo">whatever works</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><i class="material-icons">home</i></li>
+                        <li><a class="details active waves-effect" href="#">home</a></li>
+                        <li><a class="details active waves-effect" href="#">about</a></li>
+                        <li><a class="details active waves-effect" href="./contact-us.html">contact us</a></li>
+                    </ul>
                 </div>
-                <div class="tab"><a class="waves-effect btn-large" href="#ew8wuq">GENERAL SECTION</a></div>
-                <!-- !need to figure out how to link this to the proper section -->
-                <div class="tab disabled"><a class="waves-effect btn-large" href="#test3">PEDIATRICS</a>
-                </div>
-                <div class="tab"><a class="waves-effect btn-large" href="#test4">PEDIATRICS QM</a></div>
-                <div class="tab"><a class="waves-effect btn-large" href="#test5">TRAUMA/NEURO</a></div>
-                <div class="tab"><a class="waves-effect btn-large" href="#test6">AIRWAY/VENT</a></div>
-                <div class="tab"><a class="waves-effect btn-large" href="#test7">ADULT QM</a></div>
-            </div>
+            </nav>
         </div>
-    </div>
 
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger hidden" href="#modal1">Modal</a>
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h5>Hello, welcome to whatever works! May we have the pleasure of knowing who we are hosting?</h5>
+        <!-- this is where the main content will go, it should be split into three columans -->
+        <section class="section-wrapper">
             <div class="row">
-                <form class="col s12">
+                <!-- side nav list goes here -->
+                <div class="column-1">
+                    <div class="section">
+                        <div class="tab"><a class="active btn-large waves-effect" href="#test1">MISSION
+                                INFO</a>
+                        </div>
+                        <div class="tab"><a class="waves-effect btn-large" href="#ew8wuq">GENERAL SECTION</a></div>
+                        <!-- !need to figure out how to link this to the proper section -->
+                        <div class="tab disabled"><a class="waves-effect btn-large" href="#test3">PEDIATRICS</a>
+                        </div>
+                        <div class="tab"><a class="waves-effect btn-large" href="#test4">PEDIATRICS QM</a></div>
+                        <div class="tab"><a class="waves-effect btn-large" href="#test5">TRAUMA/NEURO</a></div>
+                        <div class="tab"><a class="waves-effect btn-large" href="#test6">AIRWAY/VENT</a></div>
+                        <div class="tab"><a class="waves-effect btn-large" href="#test7">ADULT QM</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Trigger -->
+            <a class="waves-effect waves-light btn modal-trigger hidden" href="#modal1">Modal</a>
+
+            <!-- Modal Structure -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <h5>Hello, welcome to whatever works! May we have the pleasure of knowing who we are hosting?</h5>
                     <div class="row">
-                        <div class="input-field col s6">
-                            <input id="first_name" type="text" class="validate">
-                            <label for="first_name">First Name</label>
-                        </div>
-                        <div class="input-field col s6">
-                            <input id="last_name" type="text" class="validate">
-                            <label for="last_name">Last Name</label>
-                        </div>
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div>
+                                <h6>PSA: We will not store your name outside of this browsing session 😊 </h6>
+                            </div>
+                        </form>
                     </div>
-                    <div>
-                        <h6>PSA: We will not store your name outside of this browsing session 😊 </h6>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" id="get_name" class="modal-close waves-effect btn-large">Done</a>
+                </div>
+            </div>
+
+            <!-- data entry fields go here -->
+            <div class="column-2">
+                <div class="section formio">
+                    <div id="formio">
+                        <script
+                            src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://atelyxbavvhqhre.form.io/pmbeta"></script>
                     </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" id="get_name" class="modal-close waves-effect btn-large">Done</a>
-        </div>
-    </div>
+                </div>
 
-    <!-- data entry fields go here -->
-    <div class="column-2">
-        <div class="section formio">
-            <div id="formio">
-                <script
-                    src="https://unpkg.com/formiojs@latest/dist/formio.embed.js?src=https://atelyxbavvhqhre.form.io/pmbeta"></script>
             </div>
-        </div>
-
-        </div>
-        <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
-        <script type="IN/Share" data-url="https://www.linkedin.com"></script>
-        
+            <!-- <script src="https://platform.linkedin.com/in.js" type="text/javascript">lang: en_US</script>
+        <script type="IN/Share" data-url="https://www.linkedin.com"></script> -->
+        </section>
         <!-- footer section -->
         <footer class="page-footer">
             <div class="container">
                 <div class="row">
                     <div class="col l6 s12">
                         <h5 class="white-text" id="visitor"></h5>
-                        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores iusto id enim cumque earum illum ipsa. Sed delectus et quibusdam est optio ea sunt, officiis inventore debitis repellendus, laboriosam aliquam!.</p>
+                        <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Maiores iusto id enim cumque earum illum ipsa. Sed delectus et quibusdam est optio ea sunt,
+                            officiis inventore debitis repellendus, laboriosam aliquam!.</p>
                     </div>
                     <div class="col l4 offset-l2 s12">
                         <h5 class="white-text">whatever works</h5>
@@ -121,21 +122,22 @@
                     </div>
                 </div>
             </div>
+
             <div class="footer-copyright">
-            <div class="container right-align">
-                <h6> © 2020 whatever works</h6>
+                <div class="container right-align">
+                    <h6> © 2020 whatever works</h6>
+                </div>
+                <div id="visits"></div>
             </div>
-            <div id="visits"></div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!--JavaScript at end of body for optimized loading-->
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--JavaScript at end of body for optimized loading-->
+        <script type="text/javascript" src="./assets/js/main.js"></script>
 
-</body>
+    </body>
 
 </html>
