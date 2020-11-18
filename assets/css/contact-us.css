@@ -39,6 +39,8 @@ nav {
 
 .modal {
 	max-height: 45% !important;
+	background: none;
+    height: fit-content;
 }
 
 /* form style */
@@ -100,11 +102,7 @@ legend {
 	position: absolute;
 	background-color: #2e2e31 !important;
 	width: 100%;
-}
 
-.modal {
-    background: none;
-    height: fit-content;
 }
 
 .copyright {

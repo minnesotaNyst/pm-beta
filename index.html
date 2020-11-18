@@ -21,19 +21,48 @@
         <title>Whatever Works</title>
     </head>
 
-    <body>
-        <!-- navbar items go in this section -->
-        <div class="navbar-fixed">
-            <nav class="nav-extended">
-                <div class="nav-wrapper">
-                    <a href="./index.html" class="brand-logo">whatever works</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><i class="material-icons">home</i></li>
-                        <li><a class="details active waves-effect" href="#">home</a></li>
-                        <li><a class="details active waves-effect" href="#">about</a></li>
-                        <li><a class="details active waves-effect" href="./contact-us.html">contact us</a></li>
-                    </ul>
+<body>
+    <!-- navbar items go in this section -->
+    <div class="navbar-fixed">
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="brand-logo">whatever works</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><i class="material-icons">home</i></li>
+                    <li><a class="details active waves-effect" href="#">home</a></li>
+                    <li><a class="details active waves-effect" href="#">about</a></li>
+                    <li><a class="details active waves-effect" href="./contact-us.html">contact us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- side nav for mobile/small devices -->
+    <ul id="slide-out" class="sidenav">
+        <li><a class="waves-effect" href="./index.html"><i class="material-icons">home</i>Homepage</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="./contact-us.html">Contact Us</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="#!">About Us</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a class="waves-effect" href="#!">Customer Support</a></li>
+    </ul>
+
+    <!-- this is where the main content will go, it should be split into three columans -->
+
+    <div class="row">
+
+        <!-- side nav list goes here -->
+        <div class="column-1">
+            <div class="section">
+                <div class="tab"><a class="active btn-large waves-effect" href="#test1">MISSION
+                        INFO</a>
                 </div>
             </nav>
         </div>
@@ -58,6 +87,9 @@
                     </div>
                 </div>
             </div>
+            <a href="#!" id="get_name" class="modal-close waves-effect btn-large">Done</a>
+        </div>
+    </div>
 
             <!-- Modal Trigger -->
             <a class="waves-effect waves-light btn modal-trigger hidden" href="#modal1">Modal</a>
