@@ -5,6 +5,9 @@ body {
 	margin: 0;
 	height: 100%;
 }
+.section-wrapper {
+	min-height: 100vh;
+}
 
 /* custom navbar style */
 nav {
@@ -19,7 +22,7 @@ nav {
 .column-1 {
 	background-color: #2e2e31;
 	text-decoration: none;
-	height: 100vh;
+	min-height: 100vh;
 	position: fixed;
 }
 .btn-large {
