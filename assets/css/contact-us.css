@@ -101,7 +101,12 @@ legend {
 	background-color: #2e2e31 !important;
 	width: 100%;
 	text-align: center;
-	position: absolute;
+	padding: 0px;
+	height: fit-content;
+}
+
+.container-copyright {
+	width: 100% !important;
 }
 
 .modal {
@@ -111,6 +116,10 @@ legend {
 
 .copyright {
 	padding: 0 20px;
+}
+
+.icon {
+	height: 90px;
 }
 
 .apiCounter {

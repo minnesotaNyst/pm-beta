@@ -103,7 +103,7 @@ var apiCounter = function () {
 		function (response) {
 			var apiDisplay = document.createElement('p');
 			apiDisplay.textContent =
-				'Fun fact, this site has been visited ' + response.value + ' times!';
+				'(Fun fact, this site has been visited ' + response.value + ' times!)';
 			apiDisplay.classList = 'center-align';
 			$('#visits').append(apiDisplay);
 		}
