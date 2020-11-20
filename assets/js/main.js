@@ -33,7 +33,7 @@ var displayName = function () {
 		fName = [];
 		return;
 	} else {
-		var dDisplay = document.createElement('h6');
+		var dDisplay = document.createElement( 'p' );
 		dDisplay.textContent = 'Thank you for visiting our page, ' + fName + '!';
 		dDisplay.classList = 'grey-text text-lighten-4';
 		$('#visitor').append(dDisplay);
@@ -91,8 +91,10 @@ $(document).ready(function () {
 	$('.sidenav').sidenav();
 });
 
-
-
+/* feature discovery button on contact-us page */
+$(document).ready(function(){
+    $('.tap-target').tapTarget();
+});
 
 var apiCounter = function () {
 	$.getJSON(
@@ -100,7 +102,7 @@ var apiCounter = function () {
 		function (response) {
 			var apiDisplay = document.createElement('p');
 			apiDisplay.textContent =
-				'Fun fact, this site has been visited ' + response.value + ' times!';
+				'(Fun fact, this site has been visited ' + response.value + ' times!)';
 			apiDisplay.classList = 'center-align';
 			$('#visits').append(apiDisplay);
 		}
