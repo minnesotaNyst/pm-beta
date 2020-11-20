@@ -25,9 +25,9 @@ A form builder enabling dynamic and configurable data documentation
 - CSS
 - HTML
 - Javascript
-- [JQuery](https://jquery.com/) (https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js)
-- [Bootstrap](https://getbootstrap.com/) (https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css)
-- [Materialize](https://materializecss.com/)(https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css)
+- [JQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Materialize](https://materializecss.com/)
 
 [Back to Contents](#table-of-contents)
 
@@ -52,9 +52,9 @@ A form builder enabling dynamic and configurable data documentation
 [Back to Contents](#table-of-contents)
 
 ## Contribution
-- **Anthony Potts**
-- **Jake Nystrom**
-- **Nathan Potts**
-- **Will Pearson**
+- [Anthony Potts](https://github.com/anthonypotts)
+- [Jake Nystrom](https://github.com/minnesotaNyst)
+- [Nathan Potts]()
+- [Will Pearson](https://github.com/willp429)
 
 [Back to Contents](#table-of-contents)

@@ -39,6 +39,8 @@ nav {
 
 .modal {
 	max-height: 45% !important;
+	background: none;
+    height: fit-content;
 }
 
 /* form style */
@@ -109,9 +111,6 @@ legend {
 	width: 100% !important;
 }
 
-.modal {
-    background: none;
-    height: fit-content;
 }
 
 .copyright {
