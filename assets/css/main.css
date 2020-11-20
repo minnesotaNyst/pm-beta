@@ -105,8 +105,28 @@ legend {
 	position: absolute;
 	background-color: #2e2e31 !important;
 	width: 100%;
+	text-align: center;
+	padding: 0px;
+	height: fit-content;
 }
+
+.container-copyright {
+	width: 100% !important;
+}
+
 
 .copyright {
 	padding: 0 20px;
+}
+
+.icon {
+	height: 90px;
+}
+
+.apiCounter {
+	padding: 0 20px;
+}
+
+.footer-copyright {
+	padding: 10px;	
 }

@@ -33,7 +33,7 @@ var displayName = function () {
 		fName = [];
 		return;
 	} else {
-		var dDisplay = document.createElement( 'p' );
+		var dDisplay = document.createElement('p');
 		dDisplay.textContent = 'Thank you for visiting our page, ' + fName + '!';
 		dDisplay.classList = 'grey-text text-lighten-4';
 		$('#visitor').append(dDisplay);
@@ -70,17 +70,17 @@ var userQuestion = function () {
 	var user = $('#full-name').val();
 	var email = $('#email').val();
 	var message = $('#contact-message').val();
-	if (user !== "") {
+	if (user !== '') {
 		//this var is looking for information that might exist with a key of inputInfo, if nothing exists set inputInfo = []
-		var inputInfo = JSON.parse(window.localStorage.getItem("inputInfo")) || [];
+		var inputInfo = JSON.parse(window.localStorage.getItem('inputInfo')) || [];
 		var content = {
 			full_name: user,
 			user_email: email,
-			content_message: message,
+			content_message: message
 		};
 		inputInfo.push(content);
-		window.localStorage.setItem("inputInfo", JSON.stringify(inputInfo));
-	};
+		window.localStorage.setItem('inputInfo', JSON.stringify(inputInfo));
+	}
 	$('#full-name').val('');
 	$('#email').val('');
 	$('#contact-message').val('');
@@ -92,8 +92,8 @@ $(document).ready(function () {
 });
 
 /* feature discovery button on contact-us page */
-$(document).ready(function(){
-    $('.tap-target').tapTarget();
+$(document).ready(function () {
+	$('.tap-target').tapTarget();
 });
 
 var apiCounter = function () {
@@ -103,7 +103,7 @@ var apiCounter = function () {
 			var apiDisplay = document.createElement('p');
 			apiDisplay.textContent =
 				'(Fun fact, this site has been visited ' + response.value + ' times!)';
-			apiDisplay.classList = 'center-align';
+			apiDisplay.classList = 'left-align';
 			$('#visits').append(apiDisplay);
 		}
 	);
