@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--google icon font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- form.io stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+    <!-- !^this is throwing an error in the console and i'm not sure why -->
+    <link rel="stylesheet" href="assets/css/contact-us.css">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <!-- navbar items go in this section -->
+    <div class="navbar-fixed">
+        <nav class="nav-extended">
+            <div class="nav-wrapper">
+                <a href="./index.html" class="brand-logo">Whatever Works</a>
+                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">Menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><i class="material-icons">account_circle</i></li>
+                    <li><a class="details active waves-effect" href="index.html">Home</a></li>
+                    <li><a class="details active waves-effect" href="#">About</a></li>
+                    <li><a class="details active waves-effect" href="./contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div>
+        <ul class="sidenav" id="slide-out">
+            <li><a class="waves-effect" href="./index.html">Homepage</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="./contact-us.htm"><i class="material-icons">account_circle</i>Contact
+                    Us</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="#!">About Us</a></li>
+            <li>
+                <div class="divider"></div>
+            </li>
+            <li><a class="waves-effect" href="#!">Customer Support</a></li>
+        </ul>
+
+    </div>
+
+    <!--contact-us side-nav fab JAKE-->
+    <ul id="slide-out-jake" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="./assets/images/green-leaves.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="./assets/images/jake-headshot2.png"></a>
+            <a href="#name"><span class="white-text name">Jake Nystrom</span></a>
+            <a href="#email"><span class="white-text email">jwm.nystrom@gmail.com</span></a>
+        </div></li>
+        <li><a href="https://www.linkedin.com/in/jakenystrom/"><i class="material-icons">cloud</i>LINKED IN</a></li>
+        <li><a href="https://github.com/minnesotaNyst"><i class="material-icons">cloud</i>Github</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Deep Dive</a></li>
+        <li><a class="waves-effect" href="https://csssaints.com/sports/baseball/roster/jake-nystrom/3505"><i class="material-icons">directions_run</i></a></li>
+    </ul>
+    <!-- <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+
+    <!--contact-us side-nav fab WILL-->
+    <ul id="slide-out-will" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="./assets/images/green-leaves.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="./assets/images/WillPIMG.png"></a>
+            <a href="#name"><span class="white-text name">Will Pearson</span></a>
+            <a href="#email"><span class="white-text email">williamdpearson@icloud.com</span></a>
+        </div></li>
+        <li><a href="https://www.linkedin.com/in/williamdpearson"><i class="material-icons">cloud</i>LINKED IN</a></li>
+        <li><a href="https://github.com/minnesotaNyst"><i class="material-icons">cloud</i>Github</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Deep Dive</a></li>
+        <li><a class="waves-effect" href="https://www.fox21online.com/2020/07/22/northland-natives-formulate-healthy-boost-with-boomerang-energy/"><i class="material-icons">directions_run</i></a></li>
+    </ul>
+
+    <!--contact-us side-nav fab NATHAN-->
+    <ul id="slide-out-nathan" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="./assets/images/green-leaves.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="./assets/images/nathan-headshot.jpg"></a>
+            <a href="#name"><span class="white-text name">Nathan Potts</span></a>
+            <a href="#email"><span class="white-text email">pottsandpans42@hotmail.com</span></a>
+        </div></li>
+        <li><a href="https://www.linkedin.com/in/nathan-potts-0573721b7/"><i class="material-icons">cloud</i>LINKED IN</a></li>
+        <li><a href="https://github.com/nathan-potts41"><i class="material-icons">cloud</i>Github</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Deep Dive</a></li>
+        <li><a class="waves-effect" href="https://twitter.com/NorthwesternMN/status/1105125759683829760"><i class="material-icons">directions_run</i></a></li>
+    </ul>
+
+    <!--contact-us side-nav fab ANTHONY-->
+    <ul id="slide-out-anthony" class="sidenav">
+        <li><div class="user-view">
+            <div class="background">
+                <img src="./assets/images/green-leaves.jpg">
+            </div>
+            <a href="#user"><img class="circle" src="./assets/images/tony-potts3.jpg"></a>
+            <a href="#name"><span class="white-text name">Anthony Potts</span></a>
+            <a href="#email"><span class="white-text email">ampotts24@gmail.com</span></a>
+        </div></li>
+        <li><a href="https://www.linkedin.com/in/anthony-potts-8016b4176/"><i class="material-icons">cloud</i>LINKED IN</a></li>
+        <li><a href="https://github.com/anthonypotts"><i class="material-icons">cloud</i>Github</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Deep Dive</a></li>
+        <li><a class="waves-effect" href="https://www.youtube.com/watch?v=JwAS93xAuLA"><i class="material-icons">directions_run</i></a></li>
+    </ul>
+
+    <!-- meet the staff starts -->
+
+    <div class="row">
+        <div>
+            <h2 class="center-align">Meet the Staff</h2>
+            <h6 class="col s12 center-align">Get to know the people who will be working for you.</h6>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <section class="container">
+        <section>
+            <div class="row">
+                <!-- jake -->
+                <div class="col s6 m6">
+                    <div class="card medium hoverable">
+                        <div class="card-image">
+                            <img src="assets/images/landscape-wallpaper-hd(1).png">
+                            <span class="card-title">Jake Nystrom - Co-Founder</span>
+                        </div>
+
+                        <div class="card-content">
+                            <p>Jake Nystrom is one of the founders of Promeasure. As a motivated and goal oriented
+                                individual, he
+                                embraces challenge, striving to help others learn and develop as well as
+                                pushing himself to further develop his current skill set with the expectation to
+                                succeed. </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.linkedin.com/in/jakenystrom/" target="_blank">LINKEDIN</a>
+                            <a href="https://github.com/minnesotaNyst" target="_blank">Github</a>
+                            <div class="fixed-action-button">
+                                <a class="sidenav-trigger btn-floating halfway-fab waves-effect waves-light red" data-target="slide-out-jake"><i
+                                    class="material-icons">expand_more</i></a>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+                <!-- will -->
+                <div class="col s6 m6">
+                    <div class="card medium hoverable">
+                        <div class="card-image">
+                            <img src="assets/images/Landscape-bioimage(4).png">
+                            <span class="card-title">Will Pearson - Co-Founder</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Will Pearson is one of the founders of Promeasure. He is a leader, striving
+                                to bring creative answers to difficult problems. Highly-motivated, he is passionate
+                                about working on teams to adopt and develop new technologies that facilitate growth.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.linkedin.com/in/williamdpearson" target="_blank">LINKEDIN</a>
+                            <a href="https://github.com/willp429" target="_blank">Github</a>
+                            <a class="sidenav-trigger btn-floating halfway-fab waves-effect waves-light red" data-target="slide-out-will"><i
+                                class="material-icons">expand_more</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="row">
+                <!-- nathan -->
+                <div class="col s6 m6">
+                    <div class="card medium hoverable">
+                        <div class="card-image">
+                            <img src="assets/images/Landscape-bioimage.png">
+                            <span class="card-title">Nathan Potts</span>
+                        </div>
+
+                        <div class="card-content">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, ipsam consequatur
+                                voluptatibus fugit debitis obcaecati velit nobis fuga consectetur laboriosam illo,
+                                repudiandae totam veritatis asperiores molestiae quibusdam rerum commodi repellat.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://www.linkedin.com/in/nathan-potts-0573721b7/" target="_blank">LINKEDIN</a>
+                            <a href="https://github.com/nathan-potts41" target="_blank">Github</a>
+                            <a class="sidenav-trigger btn-floating halfway-fab waves-effect waves-light red" data-target="slide-out-nathan"><i
+                                class="material-icons">expand_more</i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- tony -->
+                <div class="col s6 m6">
+                    <div class="card medium hoverable">
+                        <div class="card-image">
+                            <img src="assets/images/Landscape-bioimage(3).png">
+                            <span class="card-title">Anthony Potts</span>
+                        </div>
+                        <div class="card-content">
+                            <p>Anthony is a dedicated worker with a wide diversity of skills. His background in music
+                                brings creativity to his problem solving. Once committed to a task, he will labour
+                                diligently until a proper solution is found.
+                            </p>
+                        </div>
+                        <div class="card-action">
+                            <a href="https://github.com/anthonypotts" target="_blank">LINKEDIN</a>
+                            <a href="https://github.com/willp429" target="_blank">Github</a>
+                            <a class="sidenav-trigger btn-floating halfway-fab waves-effect waves-light red" data-target="slide-out-anthony"><i
+                                class="material-icons">expand_more</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+
+        <!-- Contact info in this section -->
+
+        <div>
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="row">
+            <div class="divider"></div>
+            <div class="section">
+                <div class="contact-form col s12">
+                    <h5>Reach out to us with any questions you might have.</h5>
+                    <div class="row">
+                        <form class="col s12" id="contact-form">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="full-name" type="text" class="validate">
+                                    <label for="full-name">Full Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="tel" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" placeholder="Message"></textarea>
+
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal2"
+                                id="submit-btn">Submit</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- modal thanking user for submitting a contact form -->
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h4>Thank you for reaching out to us!</h4>
+            <p>We will get back to you as soon as possible.</p>
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn">Close</a>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container-copyright">
+                <div class="row">
+                    <div class="col l4 s12">
+                        <h6 class="white-text" id="visitor"></h6>
+                        <div class="apiCounter" id="visits"></div>
+                    </div>
+                    
+                    <div class="col l4 s12 icon valign-wrapper">
+                        <i class="material-icons">looks</i>
+                    </div>
+
+                    <div class="col l4 s12 right-align">
+                        <ul>
+                            <li><a class="white-text text-lighten-3" href="#!">Home</a></li>
+                            <li><a class="white-text text-lighten-3" href="#!">About</a></li>
+                            <li><a class="white-text text-lighten-3" href="./contact-us.html">Contact Us</a></li>
+                            <li><a class="grey-text text-lighten-6"></a>© 2020 copyright whatever works</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <!--JS for contact-us page-->
+    <!-- <script type="text/javascript" src="./assets/js/contact-us.js"></script> -->
+
+
+</body>
+
+</html>
