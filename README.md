@@ -1,7 +1,19 @@
 # PM Beta Form Builder
 
-![Wireframe of Promeasure](./assets/images/wireframe.png)
-- Insert GIF post HTML cleanup
+This is where the user will be taken to when they click the link to the deployed page
+![Landing Page](./assets/images/intro-modal.png)
+
+They will be presented with a data entry from with built in validation
+![Data Entry Validation](./assets/images/data-entry.png)
+
+The footer contains a dynamically generated HTML block where the name is pulled from local storage
+![Dynamically Generated HTML](./assets/images/dynamic-html.png)
+
+The user will be presented with this contact info page by using the navigation bar or footer menu options
+![Contact Info Page](./assets/images/contact-info.png)
+
+Through the use of modals and local storage, we created the framework to ingest messages from our end users
+![Modal Local Storage](./assets/images/modal-localstorage.png)
 
 ## Purpose
 A form builder enabling dynamic and configurable data documentation
