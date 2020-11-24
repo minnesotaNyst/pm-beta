@@ -20,6 +20,7 @@ A form builder enabling dynamic and configurable data documentation
 
 ### Table of Contents
 - [Website](#website)
+- [Presentation](#presentation)
 - [Built With](#built-with)
 - [Resources](#resources)
 - [Contribution](#contribution)
@@ -29,6 +30,11 @@ A form builder enabling dynamic and configurable data documentation
 ---
 ## Website & Presentation
 - https://minnesotanyst.github.io/pm-beta/
+
+[Back to Contents](#table-of-contents)
+
+---
+## Presentation
 - https://prezi.com/view/hIQmrJRV8sTyjGOSF9Fx/
 
 [Back to Contents](#table-of-contents)
@@ -60,7 +66,7 @@ A form builder enabling dynamic and configurable data documentation
 ---
 
 ## Future Enhancements
-![Open Issues](https://img.shields.io/github/issues/minnesotaNyst/pm-beta?style=flat-square?link=)(https://github.com/minnesotaNyst/pm-beta/issues)
+[![Open Issues](https://img.shields.io/github/issues/minnesotaNyst/pm-beta?style=flat-square?link=)](https://github.com/minnesotaNyst/pm-beta/issues)
 
 [Back to Contents](#table-of-contents)
 
